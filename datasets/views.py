@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from django.views.generic import ListView
 
-# Create your views here.
+from datasets.models import Dataset
+
+
+class DatasetListView(ListView):
+    model = Dataset
+    context_object_name = 'dataset_list'
+    paginate_by = 20
+    template_name = 'datasets/dataset_list.html'
