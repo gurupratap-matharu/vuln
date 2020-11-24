@@ -1,6 +1,5 @@
 
 <h1 align="center">Vuln</h1>
-<hr>
 <h5 align="center">Analyses vulnerabilities in your project</h5>
 
 <img src="https://github.com/gurupratap-matharu/vuln/blob/master/staticfiles/img/hero.jpg" alt="drawing" width="1920"/>
