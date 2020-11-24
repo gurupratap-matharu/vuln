@@ -37,9 +37,16 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
+    # Django administration
     path('dj-admin/', admin.site.urls),
+
+    # Local apps
+    path('', include('datasets.urls')),
+
+    # Rest API
     path('api/v1/', include('api.urls')),
     path('docs/', include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+
 ]

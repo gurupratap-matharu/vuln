@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
     # Local
     'api.apps.ApiConfig',
+    'datasets.apps.DatasetsConfig',
 ]
 
 MIDDLEWARE = [
