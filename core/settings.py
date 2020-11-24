@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'drf_yasg',
     'django_extensions',
     'crispy_forms',
+
+    # Local
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
