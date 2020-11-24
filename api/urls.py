@@ -4,5 +4,5 @@ from django.urls import path
 from api.views import DatasetAPIView
 
 urlpatterns = [
-    path('', DatasetAdmin.as_view()),
+    path('', DatasetAPIView.as_view()),
 ]
