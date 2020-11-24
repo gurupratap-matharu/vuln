@@ -7,9 +7,11 @@
 <h1>All Datasets</h1>
 {% for dataset in object_list %}
 <ul>
-    <a href="{{ dataset.dataset.url }}">
-        <li>{{ dataset.created_on }}</li>
-    </a>
+    <li>
+        <a href="{{ dataset.dataset.url }}">
+            {{ dataset.created_on }} | {{ dataset.title }}
+        </a>
+    </li>
 </ul>
 {% endfor %}
 
