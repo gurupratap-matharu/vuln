@@ -17,6 +17,9 @@ gunicorn = "*"
 drf-yasg = "*"
 django-crispy-forms = "*"
 psycopg2-binary = "*"
+pandas = "*"
+jupyter = "*"
+jupyterlab = "*"
 
 [requires]
 python_version = "3.8"
